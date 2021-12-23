@@ -227,6 +227,11 @@
                 "DL:"+eLists.ANIMAL+" AND M2|XX|DL:"+eLists.ANIMAL+" AND M2",
                 "DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1",
             ],
+            "POISONED_WALL": [
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+			],
         }
 
         airDensity = 1.225; // kg/m^3
@@ -1575,7 +1580,7 @@
             "frozen_poisoned_ketchup": {
                 "name": "frozen poisoned ketchup",
                 "color": "#d43754",
-                "behavior": behaviors.WALL,
+                "behavior": behaviors.POISONED_WALL,
                 "category":"solids",
                 "tempHigh": 3,
                 "stateHigh": "poisoned_ketchup",
