@@ -499,6 +499,15 @@
                 "viscosity": 50000,
                 "category":"liquids",
             },
+            "poisoned_ketchup": {
+                "name": "poisoned ketchup",
+                "color": "#ff3119",
+                "behavior": behaviors.POISONED_LIQUID,
+                "tempLow": -3,
+                "stateLow": "frozen_poisoned_ketchup",
+                "viscosity": 50000,
+                "category":"liquids",
+            },  
             "molasses": {
                 "name": "molasses",
                 "color": "#240f00",
@@ -1570,18 +1579,17 @@
                 "color": "#d44737",
                 "behavior": behaviors.WALL,
                 "category":"solids",
-                "tempHigh": 0,
+                "tempHigh": -3,
                 "stateHigh": "ketchup",
             },
-            "poisoned_ketchup": {
-                "name": "poisoned ketchup",
-                "color": "#de0030",
-                "behavior": behaviors.POISONED_LIQUID,
-                "tempLow": -3,
-                "stateLow": "frozen_ketchup",
-                "viscosity": 50000,
-                "category":"liquids",
-            },  
+            "frozen_poisoned_ketchup": {
+                "name": "frozen poisoned ketchup",
+                "color": "#d44737",
+                "behavior": behaviors.WALL,
+                "category":"solids",
+                "tempHigh": 3,
+                "stateHigh": "poisoned_ketchup",
+            },
 
             
             
