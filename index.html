@@ -498,15 +498,6 @@
                 "stateLow": "frozen_ketchup",
                 "viscosity": 50000,
                 "category":"liquids",
-            },
-            "poisoned_ketchup": {
-                "name": "poisoned ketchup",
-                "color": "#ff3119",
-                "behavior": behaviors.POISONED_LIQUID,
-                "tempLow": -3,
-                "stateLow": "frozen_poisoned_ketchup",
-                "viscosity": 50000,
-                "category":"liquids",
             },  
             "molasses": {
                 "name": "molasses",
@@ -1564,16 +1555,6 @@
                 ],
                 "category": "life",
             }, // start of ketchupery
-            "ketchup_spout": {
-                "name": "ketchup spout",
-                "color": "#944137",
-                "behavior": [
-                    "XX|CR:ketchup|XX",
-                    "CR:ketchup|XX|CR:ketchup",
-                    "XX|CR:ketchup|XX",
-                ],
-                "category":"special",
-            },
             "frozen_ketchup": {
                 "name": "frozen ketchup",
                 "color": "#d44737",
@@ -1582,6 +1563,15 @@
                 "tempHigh": -3,
                 "stateHigh": "ketchup",
             },
+            "poisoned_ketchup": {
+                "name": "poisoned ketchup",
+                "color": "#ff3119",
+                "behavior": behaviors.POISONED_LIQUID,
+                "tempLow": -3,
+                "stateLow": "frozen_poisoned_ketchup",
+                "viscosity": 50000,
+                "category":"liquids",
+            },
             "frozen_poisoned_ketchup": {
                 "name": "frozen poisoned ketchup",
                 "color": "#d44737",
@@ -1589,6 +1579,16 @@
                 "category":"solids",
                 "tempHigh": 3,
                 "stateHigh": "poisoned_ketchup",
+            },
+            "ketchup_spout": {
+                "name": "ketchup spout",
+                "color": "#944137",
+                "behavior": [
+                    "XX|CR:ketchup AND CR:poisoned_ketchup0.001%|XX",
+                    "CR:ketchup AND CR:poisoned_ketchup0.001%|XX|CR:ketchup AND CR:poisoned_ketchup0.001%",
+                    "XX|CR:ketchup AND CR:poisoned_ketchup0.001%|XX",
+                ],
+                "category":"special",
             },
 
             
