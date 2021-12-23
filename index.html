@@ -227,6 +227,11 @@
                 "DL:"+eLists.ANIMAL+" AND M2|XX|DL:"+eLists.ANIMAL+" AND M2",
                 "DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1",
             ],
+            "POISONED_WALL": [
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+			],
         }
 
         airDensity = 1.225; // kg/m^3
@@ -1575,9 +1580,9 @@
             "frozen_poisoned_ketchup": {
                 "name": "frozen poisoned ketchup",
                 "color": "#d43754",
-                "behavior": behaviors.WALL,
+                "behavior": behaviors.POISONED_WALL,
                 "category":"solids",
-                "tempHigh": 3,
+                "tempHigh": -3,
                 "stateHigh": "poisoned_ketchup",
             },
             "ketchup_spout": {
@@ -1587,16 +1592,6 @@
                     "XX|CR:poisoned_ketchup%0.001 AND CR:ketchup|XX",
                     "CR:poisoned_ketchup%0.001 AND CR:ketchup|XX|CR:poisoned_ketchup%0.001 AND CR:ketchup",
                     "XX|CR:poisoned_ketchup%0.001 AND CR:ketchup|XX",
-                ],
-                "category":"special",
-            },
-            "ketchup_cloud": {
-                "name": "ketchup cloud",
-                "color": "#6e413b",
-                "behavior": [
-                    "XX|XX|XX",
-                    "M1%5|XX|M1%5",
-                    "XX|CR:ketchup%1|XX",
                 ],
                 "category":"special",
             },
