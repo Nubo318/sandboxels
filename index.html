@@ -126,6 +126,10 @@
     </script>
 
     <script>
+        eLists = {
+            "ANIMAL": ["flea","ant","fly","firefly","bee","frog","fish","worm","termite","rat"],
+            "CLEANANIMAL": ["ant","firefly","bee","frog","fish"],
+        }
         
         behaviors = {
             "POWDER": [
@@ -219,14 +223,10 @@
                 "M1|M1|M1",
             ],
             "POISONED_LIQUID": [
-                "DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat|DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat|DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat",
-                "DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat AND M2|XX|DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,ratAND M2",
-                "DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat AND M1|DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat AND M1|DL:flea,ant,fly,firefly,bee,frog,fish,worm,termite,rat AND M1",
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+" AND M2|XX|DL:"+eLists.ANIMAL+" AND M2",
+                "DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1",
             ],
-        }
-        eLists = {
-            "ANIMAL": ["flea","ant","fly","firefly","bee","frog","fish","worm","termite","rat"],
-            "CLEANANIMAL": ["ant","firefly","bee","frog","fish"],
         }
 
         airDensity = 1.225; // kg/m^3
