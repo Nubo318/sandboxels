@@ -1,7 +1,13 @@
+Ketchup Mod Changelog (for the original Sandboxels' changelog, see https://sandboxels.r74n.com/changelog.txt)
+
+Version 1.0.1 (6th of January 2022)
+~ Updated to Sandboxels 0.8.1
+~ Frozen ketchup and frozen poisoned ketchup now starth with a temperature of 0°C
+
 Version 1.0.0 (technically not the first version, but I'm to lazy to see in which order we added these things)
-- Frozen Ketchup
-- Ketchup Spout - Water spout but ketchup, also has a 0.001% chance of spawning poisoned ketchup because why not.
-- Poisoned Ketchup - Ketchup that kills animals
-- Frozen Poisoned Ketchup
-- Ketchup Cloud - Rain cloud but ketchup
-- Poisoned Ketchup Cloud
++ Frozen Ketchup
++ Ketchup Spout - Water spout but ketchup, also has a 0.001% chance of spawning poisoned ketchup because why not.
++ Poisoned Ketchup - Ketchup that kills animals
++ Frozen Poisoned Ketchup
++ Ketchup Cloud - Rain cloud but ketchup
++ Poisoned Ketchup Cloud
