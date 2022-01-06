@@ -283,6 +283,10 @@
     </script>
 
     <script>
+	eLists = {
+            "ANIMAL": ["flea","ant","fly","firefly","bee","frog","fish","worm","termite","rat","slug","snail"],
+            "CLEANANIMAL": ["ant","firefly","bee","frog","fish"],
+        }
         
         behaviors = {
             "POWDER": [
@@ -380,11 +384,18 @@
                 "M2|XX|M2",
                 "M1|M1|M1",
             ],
+	    "POISONED_LIQUID": [
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+" AND M2|XX|DL:"+eLists.ANIMAL+" AND M2",
+                "DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1",
+            ],
+            "POISONED_WALL": [
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+			],
         }
-        eLists = {
-            "ANIMAL": ["flea","ant","fly","firefly","bee","frog","fish","worm","termite","rat","slug","snail"],
-            "CLEANANIMAL": ["ant","firefly","bee","frog","fish"],
-        }
+        
 
         airDensity = 1.225; // kg/m^3
         airTemp = 20; // Celsius
@@ -4446,7 +4457,7 @@ for (var k = 0; k < b0.split(" AND ").length; k++) {
                 <div id="categoryControls"></div>
                 <div id="elementControls"></div>
             </div>
-            <div id="extraInfo"><small><a href="https://sandboxels.R74n.com/changelog.txt" target="_blank">Controls</a> • <a href="https://sandboxels.R74n.com/changelog.txt" target="_blank">Changelog</a> • <a href="https://docs.google.com/document/d/1R8xljj_J-K5oU-9y4louwplQmM-ZBvUfXmhbgj5LYdk/edit?usp=sharing" target="_blank">Feedback</a></small></div>
+            <div id="extraInfo"><small><a href="https://sandboxels.R74n.com/changelog.txt" target="_blank">Controls</a> • <a href="changelog.txt" target="_blank">Changelog</a> • <a href="https://docs.google.com/document/d/1R8xljj_J-K5oU-9y4louwplQmM-ZBvUfXmhbgj5LYdk/edit?usp=sharing" target="_blank">Feedback</a></small></div>
         </div>
     </div>
 
