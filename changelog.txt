@@ -1,4 +1,13 @@
 Ketchup Mod Changelog (for the original Sandboxels' changelog, see https://sandboxels.r74n.com/changelog.txt)
+Sandboxels is made by slweeb.
+Mod made primarily by Nubo318. Contributors include deviantEquinox and Lily219.
+1.1.0 version of the Mod, using 0.8.1 version of Sandboxels.
+
+Version 1.1.0 (6th of January 2022)
++ Ketchup Snow (+poisoned and cloud variants)
++ Mayonnaise
++ Mustard
+~ Fixed: Ketchup can now freeze again
 
 Version 1.0.1 (6th of January 2022)
 ~ Updated to Sandboxels 0.8.1
