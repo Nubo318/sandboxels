@@ -8,3 +8,7 @@ A ketchup mod of the falling sand game Sandboxels. Sandboxels is made by slweeb.
 * Frozen Poisoned Ketchup
 * Ketchup Cloud - Rain cloud but ketchup
 * Poisoned Ketchup Cloud
+* Ketchup Snow
+* Ketchup Snow Cloud
+* Poisoned Ketchup Snow
+* Poisoned Ketchup Snow Cloud
