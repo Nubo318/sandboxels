@@ -393,7 +393,12 @@
                 "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
                 "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
                 "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
-			],
+	    ],
+	    "POISONED_POWDER": [
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "DL:"+eLists.ANIMAL+" AND M2|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M2",
+            ],
         }
         
 
@@ -2666,7 +2671,6 @@
                 "density": 1235,
 	    },
 	    "frozen_ketchup": {
-                "name": "frozen ketchup",
                 "color": "#d44737",
                 "behavior": behaviors.WALL,
 		"temp": 0,
@@ -2677,7 +2681,6 @@
 		"density": 917,
             },
             "poisoned_ketchup": {
-                "name": "poisoned ketchup",
                 "color": "#de0030",
                 "behavior": behaviors.POISONED_LIQUID,
                 "tempLow": -3,
@@ -2688,7 +2691,6 @@
 		"density": 1235,
             },
             "frozen_poisoned_ketchup": {
-                "name": "frozen poisoned ketchup",
                 "color": "#d43754",
                 "behavior": behaviors.POISONED_WALL,
 		"temp": 0,
@@ -2699,7 +2701,6 @@
 		"density": 917,
             },
             "ketchup_spout": {
-                "name": "ketchup spout",
                 "color": "#944137",
                 "behavior": [
                     "XX|CR:poisoned_ketchup%0.001 AND CR:ketchup|XX",
@@ -2709,7 +2710,6 @@
                 "category":"special",
             },
             "ketchup_cloud": {
-                "name": "ketchup cloud",
                 "color": "#6e413b",
                 "behavior": [
                     "XX|XX|XX",
@@ -2717,12 +2717,14 @@
                     "XX|CR:ketchup%1|XX",
                 ],
                 "category":"special",
+		"temp": 80,
+                "tempLow": 0,
+                "stateLow": "ketchup_snow_cloud",
 		"state": "gas",
                 "density": 1,
                 "conduct": 0.03,
             },
-		"poisoned_ketchup_cloud": {
-                "name": "poisoned ketchup cloud",
+	    "poisoned_ketchup_cloud": {
                 "color": "#633640",
                 "behavior": [
                     "XX|XX|XX",
@@ -2730,10 +2732,60 @@
                     "XX|CR:poisoned_ketchup%1|XX",
                 ],
                 "category":"special",
+		"temp": 80,
+                "tempLow": 0,
+                "stateLow": "poisoned_ketchup_snow_cloud",
 		"state": "gas",
                 "density": 1,
                 "conduct": 0.03,
             },
+	    "ketchup_snow": {
+		"color": "#ed7a6d",
+		"behavior": behaviors.POWDER,
+		"temp": 0,
+		"tempHigh": 5,
+		"stateHigh": "ketchup",
+		"category": "land",
+		"state": "solid",
+		"density": "100",
+	    },
+	    "ketchup_snow_cloud": {
+		"color": "#755652",
+		"behavior": [
+		    "XX|XX|XX",
+		    "M1%5|CH:ketchup_snow%0.05|M1%5",
+		    "XX|XX|XX",
+		    ],
+		"category":"special",
+		"temp": -10,
+		"tempHigh": 30,
+		"stateHigh": "ketchup_cloud",
+		"state": "gas",
+		"density": 2,
+	     },
+	     "poisoned_ketchup_snow": {
+		"color": "#d1697f",
+		"behavior": behaviors.POISONED_POWDER,
+		"temp": 0,
+		"tempHigh": 5,
+		"stateHigh": "poisoned_ketchup",
+		"category": "land",
+		"state": "solid",
+		"density": "100",
+	    },
+	    "poisoned_ketchup_snow_cloud": {
+		"color": "#6e4e55",
+		"behavior": [
+		    "XX|XX|XX",
+		    "M1%5|CH:poisoned_ketchup_snow%0.05|M1%5",
+		    "XX|XX|XX",
+		    ],
+		"category":"special",
+		"temp": -10,
+		"tempHigh": 30,
+		"stateHigh": "poisoned_ketchup_cloud",
+		"state": "gas",
+		"density": 2,
 
             
             
