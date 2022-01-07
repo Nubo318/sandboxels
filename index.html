@@ -385,19 +385,24 @@
                 "M1|M1|M1",
             ],
 	    "POISONED_LIQUID": [
-                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "XX|DL:"+eLists.ANIMAL+"|XX",
                 "DL:"+eLists.ANIMAL+" AND M2|XX|DL:"+eLists.ANIMAL+" AND M2",
-                "DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M1",
+                "M1|DL:"+eLists.ANIMAL+" AND M1|M1",
             ],
             "POISONED_WALL": [
-                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "XX|DL:"+eLists.ANIMAL+"|XX",
                 "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
-                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
+                "XX|DL:"+eLists.ANIMAL+"|XX",
 	    ],
 	    "POISONED_POWDER": [
-                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
-                "DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"|DL:"+eLists.ANIMAL+"",
-                "DL:"+eLists.ANIMAL+" AND M2|DL:"+eLists.ANIMAL+" AND M1|DL:"+eLists.ANIMAL+" AND M2",
+                "XX|DL:"+eLists.ANIMAL+"|XX",
+                "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
+                "M2|DL:"+eLists.ANIMAL+" AND M1|M2",
+            ],
+	    "POISONED_GAS": [
+                "M2|DL:"+eLists.ANIMAL+" AND M1|M2",
+                "DL:"+eLists.ANIMAL+" AND M1|XX|DL:"+eLists.ANIMAL+" AND M1",
+                "M2|DL:"+eLists.ANIMAL+" AND M1|M2",
             ],
         }
         
@@ -2667,6 +2672,8 @@
                 "behavior": behaviors.LIQUID,
 		"tempLow": -3,
                 "stateLow": "frozen_ketchup",
+		"tempHigh": 100,
+		"stateHigh": "ketchup_gas",
                 "viscosity": 50000,
                 "category":"liquids",
                 "state": "liquid",
@@ -2687,6 +2694,8 @@
                 "behavior": behaviors.POISONED_LIQUID,
                 "tempLow": -3,
                 "stateLow": "frozen_poisoned_ketchup",
+		"tempHigh": 100,
+		"stateHigh": "poisoned_ketchup_gas",
                 "viscosity": 50000,
                 "category":"liquids",
 		"state": "liquid",
@@ -2804,6 +2813,22 @@
                 "category":"liquids",
                 "state": "liquid",
                 "density": 1052,
+	    },
+	    "ketchup_gas": {
+		"color": "#ffb5ad",
+		"behavior": behaviors.GAS,
+		"density": 0.6,
+		"state": "gas",
+		"tempLow": 100,
+		"stateLow": "ketchup",
+	    },
+	    "poisoned_ketchup_gas": {
+		"color": "#e096a6",
+		"behavior": behaviors.POISONED_GAS,
+		"density": 0.6,
+		"state": "gas",
+		"tempLow": 100,
+		"stateLow": "poisoned_ketchup",
 	    },
 
             
