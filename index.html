@@ -3126,6 +3126,27 @@
 		behavior: behaviors.POISONED_POWDER,
 		density: 1879,
 		state: "solid",
+	    },
+	    "tomato": {
+		color: "#B11E0C",
+		behavior: behaviors.STURDYPOWDER,
+		category: "life",
+		density: 470,
+		state: "solid",
+		reactions: {
+		    "rock": { "elem1": "tomato_sauce", "elem2": "rock" },
+		},
+		burn: 40,
+		burnTime: 30,
+		burnInto: "ash",
+	    },
+	    "tomato_sauce": {
+		color: "#B72003",
+		behavior: behaviors.LIQUID,
+		category: "liquids",
+		density: 1031,
+		state: "liquid",
+		viscosity: 25000,
 	    }
 		
 
