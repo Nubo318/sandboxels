@@ -283,6 +283,10 @@
     </script>
 
     <script>
+	eLists = {
+            "ANIMAL": ["flea","ant","fly","firefly","bee","frog","fish","worm","termite","rat","slug","snail"],
+            "CLEANANIMAL": ["ant","firefly","bee","frog","fish"],
+        }
         
         behaviors = {
             POWDER: [
@@ -379,6 +383,26 @@
                 "XX|CR:fire%2.5|XX",
                 "M2|XX|M2",
                 "M1|M1|M1",
+            ],
+	    POISONED_LIQUID: [
+                "XX|DL:"+eLists.ANIMAL+"|XX",
+                "DL:"+eLists.ANIMAL+" AND M2|XX|DL:"+eLists.ANIMAL+" AND M2",
+                "M1|DL:"+eLists.ANIMAL+" AND M1|M1",
+            ],
+            POISONED_WALL: [
+                "XX|DL:"+eLists.ANIMAL+"|XX",
+                "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
+                "XX|DL:"+eLists.ANIMAL+"|XX",
+	    ],
+	    POISONED_POWDER: [
+                "XX|DL:"+eLists.ANIMAL+"|XX",
+                "DL:"+eLists.ANIMAL+"|XX|DL:"+eLists.ANIMAL+"",
+                "M2|DL:"+eLists.ANIMAL+" AND M1|M2",
+            ],
+	    POISONED_GAS: [
+                "M2|DL:"+eLists.ANIMAL+" AND M1|M2",
+                "DL:"+eLists.ANIMAL+" AND M1|XX|DL:"+eLists.ANIMAL+" AND M1",
+                "M2|DL:"+eLists.ANIMAL+" AND M1|M2",
             ],
         }
         eLists = {
