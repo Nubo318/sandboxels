@@ -3191,6 +3191,19 @@
 		burn: 40,
 		burnTime: 40,
 		burnInto: "ash",
+	    },
+	    "e-ketchup_spout": {
+		color: "#c75600",
+		behavior: behaviors.WALL,
+		behaviorOn: [
+                    "XX|CR:poisoned_ketchup%0.001 AND CR:ketchup|XX",
+                    "CR:poisoned_ketchup%0.001 AND CR:ketchup|XX|CR:poisoned_ketchup%0.001 AND CR:ketchup",
+                    "XX|CR:poisoned_ketchup%0.001 AND CR:ketchup|XX",
+                ],
+		category: "machines",
+		conduct: 1,
+		insulate: true,
+		colorOn: "#fff200",
 	    }
 
 
