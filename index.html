@@ -2940,16 +2940,19 @@
                 density: 2.1,
             }, //start of ketchupery
 	    "ketchup": {
-                "color": "#ff3119",
-                "behavior": behaviors.LIQUID,
-		"tempLow": -3,
-                "stateLow": "frozen_ketchup",
-		"tempHigh": 100,
-		"stateHigh": "ketchup_gas",
-                "viscosity": 50000,
-                "category":"liquids",
-                "state": "liquid",
-                "density": 1235,
+                color: "#ff3119",
+                behavior: behaviors.LIQUID,
+		tempLow: -3,
+                stateLow: "frozen_ketchup",
+		tempHigh: 100,
+		stateHigh: "ketchup_gas",
+                viscosity: 50000,
+                category:"liquids",
+                state: "liquid",
+                density: 1092
+		reactions: {
+		    "mayonnaise": { "elem1": null, "elem2": "fry_sauce", },
+		},
 	    },
 	    "frozen_ketchup": {
                 "color": "#d44737",
@@ -3103,7 +3106,16 @@
 		"tempLow": 100,
 		"stateLow": "poisoned_ketchup",
 		"category": "gases",
+	    },
+	    "fry_sauce": {
+                "color": "#ECC1B0",
+                "behavior": behaviors.LIQUID,
+                "viscosity": 50000,
+                "category":"liquids",
+                "state": "liquid",
+                "density": 1149,
 	    }
+		
 
 
             
