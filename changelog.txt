@@ -1,7 +1,25 @@
 Ketchup Mod Changelog (for the original Sandboxels' changelog, see https://sandboxels.r74n.com/changelog.txt)
 Sandboxels is made by slweeb.
 Mod made primarily by Nubo318. Contributors include deviantEquinox and Lily219.
-1.1.0 version of the Mod, using 0.8.1 version of Sandboxels.
+1.1.0 version of the Mod, using 0.8.2 version of Sandboxels.
+
+Version 1.2.0 (10th of January 2022)
++ Ketchup Gas + a poisoned variant
++ Fry Sauce
++ Combining mayonnaise and ketchup creates fry sauce
++ Ketchup Powder + a poisoned variant
++ Tomatos and Tomato Sauce
++ Smashing tomatos with rocks creates tomato sauce
++ Tomato sauce can be combined with sugar to make sugary tomato sauce, which can then be combined with vinegar to make ketchup
++ Cumin
++ Combining plague with ketchup stuff changes it to its poisoned variant
++ E-Ketchup Spout, a ketchup spout that works only with electricity
++ Ketchup Metal
++ Antiketchup
+~ Made the density of ketchup more accurate (hopefully).
+~ Updated to Sandboxels 0.8.2
+~ Poisoned stuff doesn't kill diagonally anymore
+~ Technical: Element properties don't use quotation marks anymore.
 
 Version 1.1.0 (6th of January 2022)
 + Ketchup Snow (+poisoned and cloud variants)
