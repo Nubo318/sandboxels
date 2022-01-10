@@ -3146,9 +3146,23 @@
 		category: "liquids",
 		density: 1031,
 		state: "liquid",
+		reactions: {
+		    "sugar": { "elem1": "sugary_tomato_sauce", "elem2": "null" },
+		},
 		viscosity: 25000,
+	    },
+	    "sugary_tomato_sauce": {
+		color: "#b53921",
+		behavior: behaviors.LIQUID,
+		category: "liquids",
+		density: 1031,
+		state: "liquid",
+		reactions: {
+		    "vinegar": { "elem1": "ketchup", "elem2": "null" },
+		},
+		viscosity: 25000,
+		hidden: true,
 	    }
-		
 
 
             
