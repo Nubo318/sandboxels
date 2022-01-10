@@ -2952,6 +2952,7 @@
                 density: 1092,
 		reactions: {
 		    "mayonnaise": { "elem1": null, "elem2": "fry_sauce" },
+		    "plague": { "elem1": "poisoned_ketchup", "elem2": null},
 	    	},
 	    },
 	    "frozen_ketchup": {
@@ -2963,6 +2964,9 @@
                 stateHigh: "ketchup",
 		state: "solid",
 		density: 917,
+		reactions: {
+		    "plague": { "elem1": "frozen_poisoned_ketchup", "elem2": null},
+		},
             },
             "poisoned_ketchup": {
                 color: "#de0030",
@@ -3008,6 +3012,9 @@
                 stateLow: "ketchup_snow_cloud",
 		state: "gas",
                 density: 1,
+		reactions: {
+		    "plague": { "elem1": "poisoned_ketchup_cloud", "elem2": null},
+		},
                 conduct: 0.03,
             },
 	    "poisoned_ketchup_cloud": {
@@ -3034,6 +3041,9 @@
 		category: "land",
 		state: "solid",
 		density: "100",
+		reactions: {
+		    "plague": { "elem1": "poisoned_ketchup_snow", "elem2": null},
+		},
 	    },
 	    "ketchup_snow_cloud": {
 		color: "#755652",
@@ -3048,6 +3058,9 @@
 		stateHigh: "ketchup_cloud",
 		state: "gas",
 		density: 2,
+		reactions: {
+		    "plague": { "elem1": "poisoned_ketchup_snow_cloud", "elem2": null},
+		},
 	     },
 	     "poisoned_ketchup_snow": {
 		color: "#d1697f",
@@ -3097,6 +3110,9 @@
 		tempLow: 100,
 		stateLow: "ketchup",
 		category: "gases",
+		reactions: {
+		    "plague": { "elem1": "poisoned_ketchup_gas", "elem2": null},
+		},
 	    },
 	    "poisoned_ketchup_gas": {
 		color: "#e096a6",
@@ -3119,6 +3135,9 @@
 		color: "#E06320",
 		behavior: behaviors.POWDER,
 		density: 1879,
+		reactions: {
+		    "plague": { "elem1": "poisoned_ketchup_powder", "elem2": null},
+		},
 		state: "solid",
 	    },
 	    "poisoned_ketchup_powder": {
