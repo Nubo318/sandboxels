@@ -1,7 +1,7 @@
 Ketchup Mod Changelog (for the original Sandboxels' changelog, see https://sandboxels.r74n.com/changelog.txt)
 Sandboxels is made by slweeb.
 Mod made primarily by Nubo318. Contributors include deviantEquinox and Lily219.
-1.1.0 version of the Mod, using 0.8.2 version of Sandboxels.
+1.2.0 version of the Mod, using 0.8.2 version of Sandboxels.
 
 Version 1.2.0 (10th of January 2022)
 + Ketchup Gas + a poisoned variant
