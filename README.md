@@ -1,4 +1,5 @@
 # Sandboxels Ketchup Mod
+Due to the mod manager update, this fork is now unused. To use the updated Ketchup Mod, click the "Mods" button in Sandboxels and add "ketchup_mod.js".
 A ketchup mod of the falling sand game Sandboxels. Sandboxels is made by slweeb.
 
 # Additions
